@@ -98,7 +98,7 @@ ISR(INT1_vect){
 	}
 }
 
-/*ISR(TIMER0_OVF_vect){
+ISR(TIMER0_OVF_vect){
 	timer_counter++;
 	if(timer_counter >730){
 		TCNT0=0x00;
@@ -106,7 +106,7 @@ ISR(INT1_vect){
 		rising_edge=0;
 		timer_counter=0;
 	}
-}*/
+}
 
 
 
