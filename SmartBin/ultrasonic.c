@@ -59,7 +59,7 @@ ISR(INT0_vect){
 			rising_edge = 1;
 			timer_counter = 0;
 			} else {
-			distance = (timer_counter * 256 + TCNT0) / 68;
+			distance = (timer_counter * 256 + TCNT0) / 58;
 			if (distance < 20.0) {
 				set_servo_angle(ANGLE_180);
 				_delay_ms(5000);
@@ -82,7 +82,7 @@ ISR(INT1_vect){
 			rising_edge = 1;
 			timer_counter = 0;
 			} else {
-			distance1 = (timer_counter * 256 + TCNT0) / 68;
+			distance1 = (timer_counter * 256 + TCNT0) / 58;
 			if (distance1 < 20.0) {
 				PORTC &= ~(1<<1);
 				PORTA |= (1<<2);
