@@ -10,10 +10,13 @@ An embedded system designed to monitor the waste level in a bin and automaticall
 - **Efficient Resource Use** by minimizing lid movement based on actual presence.
 - **Microcontroller-Based** implementation using ATMega32A.
 
-## Technologies Used
+## Technologies and Hardware Used
 
 - **Microchip Studio** for code development.
 - **AVRDUDESS** to burn the code.
+- **ATMega32A Microcontroller**
+- **USB ASP AVR ATMEL USBasp Programmer**
+- **Buzzer and LEDs**
 - **Ultrasonic Sensor (HC-SR04)** for waste level and proximity detection.
 - **Servo Motor** for lid actuation.
 - **C Language** for programming logic.
